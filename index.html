@@ -93,7 +93,7 @@
         <div class="domain-cards-container container">
             <div class="domain-card">
                 <img src="assets/domain-logos/management.png" alt="" class="w-50">
-                <h4 class="text-center py-2">Management</h4>
+                <h4 class="text-center py-2" data-bs-toggle="modal" data-bs-target="#managementmodal">Management</h4>
                 <div class="domain-info d-flex justify-content-around w-100">
                     <span class="w-50 text-center">2 Members</span>
                     <span>|</span>
@@ -102,7 +102,7 @@
             </div>
             <div class="domain-card">
                 <img src="assets/domain-logos/app.png" alt="" class="w-50">
-                <h4 class="text-center py-2">App Development</h4>
+                <h4 class="text-center py-2" data-bs-toggle="modal" data-bs-target="#appdevmodal">App Development</h4>
                 <div class="domain-info d-flex justify-content-around w-100">
                     <span class="w-50 text-center">2 Members</span>
                     <span>|</span>
@@ -111,7 +111,7 @@
             </div>
             <div class="domain-card">
                 <img src="assets/domain-logos/tech.png" alt="" class="w-50">
-                <h4 class="text-center py-2">Tech</h4>
+                <h4 class="text-center py-2" data-bs-toggle="modal" data-bs-target="#techmodal">Tech</h4>
                 <div class="domain-info d-flex justify-content-around w-100">
                     <span class="w-50 text-center">2 Members</span>
                     <span>|</span>
@@ -120,7 +120,7 @@
             </div>
             <div class="domain-card">
                 <img src="assets/domain-logos/design.png" alt="" class="w-50">
-                <h4 class="text-center py-2">Design</h4>
+                <h4 class="text-center py-2" data-bs-toggle="modal" data-bs-target="#designmodal">Design</h4>
                 <div class="domain-info d-flex justify-content-around w-100">
                     <span class="w-50 text-center">2 Members</span>
                     <span>|</span>
@@ -129,7 +129,7 @@
             </div>
             <div class="domain-card centered">
                 <img src="assets/domain-logos/outreach.png" alt="" class="w-50">
-                <h4 class="text-center py-2">Outreach</h4>
+                <h4 class="text-center py-2" data-bs-toggle="modal" data-bs-target="#outreachmodal">Outreach</h4>
                 <div class="domain-info d-flex justify-content-around w-100">
                     <span class="w-50 text-center">2 Members</span>
                     <span>|</span>
@@ -138,7 +138,7 @@
             </div>
             <div class="domain-card centered">
                 <img src="assets/domain-logos/cloud.png" alt="" class="w-50">
-                <h4 class="text-center py-2">Cloud</h4>
+                <h4 class="text-center py-2" data-bs-toggle="modal" data-bs-target="#cloudmodal">Cloud</h4>
                 <div class="domain-info d-flex justify-content-around w-100">
                     <span class="w-50 text-center">2 Members</span>
                     <span>|</span>
@@ -156,48 +156,6 @@
             </div>
         </div>
     </section>
-    <!-- Modal for web dev  -->
-    <div class="modal fade" id="webdevmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content bg-dark text-light">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Web Development Team</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="profile-cards-container">
-                        <div class="profile-card">
-                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
-                            <h4 class="text-center py-2">Name Here</h4>
-                            <h6 class="text-center py-2">Core Member</h6>
-                            <div class="member-socials">
-                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="profile-card">
-                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
-                            <h4 class="text-center py-2">Name Here</h4>
-                            <h6 class="text-center py-2">Core Member</h6>
-                            <div class="member-socials">
-                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div class="profile-card">
-                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
-                            <h4 class="text-center py-2">Name Here</h4>
-                            <h6 class="text-center py-2">Core Member</h6>
-                            <div class="member-socials">
-                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <section class="gallery" id="gallery">
         <h2 class="text-center py-2 fw-bold">Gallery</h2>
         <p class="text-center">Glimpse from our previous events</p>
@@ -222,33 +180,6 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-    <!-- <section class="faq bg-dark" id="faq">
-        <h2 class="text-center py-2 fw-bold">Frequently Asked Questions</h2>
-        <div class="container">
-            <div class="w3-content">
-                <div class="faq w3-center w3-content" style="padding-top: 55px;">
-                    <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon"
-                            src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b
-                            style="padding-top: 2px;">What is an FAQ page?</b></button>
-                    <div class="panel" style="display: none;">
-                        <div class="paragraphs" id="myDiv_id1"></div>
-                        <p id="paragraph_id1" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Placeat, soluta?
-                        </p>
-                    </div>
-                    <button class="accordion" style="display: flex; flex-direction: row;"><img class="faq-icon"
-                            src="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/chevron-down.svg"> &nbsp; &nbsp; <b
-                            style="padding-top: 2px;">What is an FAQ page?</b></button>
-                    <div class="panel" style="display: none;">
-                        <div class="paragraphs" id="myDiv_id2"></div>
-                        <p id="paragraph_id2" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Placeat, soluta?
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section id="faq" class="faq bg-dark">
         <h1 class="text-light">FAQs</h1>
         <div class="accordian">
@@ -390,6 +321,302 @@
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <div class="line"></div>
                     <p class="copyright">Copyright © 2023-24 <a class="text-primary" href="#">GDSC BPPIMT</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal for management  -->
+    <div class="modal fade" id="managementmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Management Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for appdev  -->
+    <div class="modal fade" id="appdevmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">App Development Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for tech  -->
+    <div class="modal fade" id="techmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tech Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for design  -->
+    <div class="modal fade" id="designmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Design Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for outreach  -->
+    <div class="modal fade" id="outreachmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Outreach Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for cloud  -->
+    <div class="modal fade" id="cloudmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cloud Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for web dev  -->
+    <div class="modal fade" id="webdevmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Web Development Team</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-cards-container">
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <img src="assets/members-dp/dp.png" alt="" class="w-50">
+                            <h4 class="text-center py-2">Name Here</h4>
+                            <h6 class="text-center py-2">Core Member</h6>
+                            <div class="member-socials">
+                                <a class="social-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="social-link" href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
