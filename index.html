@@ -7,61 +7,66 @@
     <title>GDSC | BPPIMT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/scrollbar.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/linuxguist/faqa@main/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <img src="assets/gdsc/gdsc-logo.png" height="55px" width="55px" alt="logo">
+            <a class="navbar-brand fixed mx-2  " href="#">GDSC BPPIMT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" href="#">Team</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
+                        <a class="nav-link active" href="#" id="navbarDropdown" aria-expanded="false">
+                            About us
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link active " href="#" aria-disabled="true">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <section class="home" id="home">
-        Home
+        <div class="body">
+            <div class="content">
+                <h1><span>GDSC</span> BPPIMT</h1>
+                <h2>Google Developer Students Club BPPIMT</h2>
+                <img id="bg-img" src="assets/gdsc/gdsc-club.png" alt="">
+            </div>
+            <div class="circle">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+            </div>
+        </div>
     </section>
     <section class="about" id="about">
         <div class="container about-container">
             <div class="about-left">
-                <img src="https://www.bvmengineering.ac.in/GDSC/images/hero3.png" alt="">
+                <img src="assets/gdsc/gdsc-bppimt.png" alt="">
             </div>
             <div class="about-right">
                 <h6 class="text-yellow">WELCOME</h6>
@@ -148,7 +153,7 @@
         </div>
     </section>
 
-    <!-- Modals  -->
+    <!-- Modal for web dev  -->
     <div class="modal fade" id="webdevmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content bg-dark text-light">
@@ -214,7 +219,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </section>
-    <section class="faq bg-dark" id="faq">
+    <!-- <section class="faq bg-dark" id="faq">
         <h2 class="text-center py-2 fw-bold">Frequently Asked Questions</h2>
         <div class="container">
             <div class="w3-content">
@@ -240,37 +245,71 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section class="faq bg-dark">
+        <h1 class="text-light">FAQs</h1>
+        <div class="accordian">
+            <div class="accordian_head">
+                <div class="accordian_toggler">+</div>
+                <span class="accordian_title">How often does events take place?</span>
+            </div>
+            <div class="accordian_body">
+                <p class="accordian_description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+                    porro facere saepe, repellat accusamus ea quia aperiam vitae fuga
+                    similique autem nostrum reiciendis quaerat sequi. Laboriosam aliquid
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+
+                </p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="accordian_head">
+                <div class="accordian_toggler">+</div>
+                <span class="accordian_title">How to become a member of GDSC?</span>
+            </div>
+            <div class="accordian_body">
+                <p class="accordian_description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+                    porro facere saepe, repellat accusamus ea quia aperiam vitae fuga
+                    similique autem nostrum reiciendis quaerat sequi. Laboriosam aliquid
+
+
+                </p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="accordian_head">
+                <div class="accordian_toggler">+</div>
+                <span class="accordian_title">What domains GDSC BPPIMT have?</span>
+            </div>
+            <div class="accordian_body">
+                <p class="accordian_description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+                    porro facere saepe, repellat accusamus ea quia aperiam vitae fuga
+                    similique autem nostrum reiciendis quaerat sequi. Laboriosam aliquid
+                </p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="accordian_head">
+                <div class="accordian_toggler">+</div>
+                <span class="accordian_title">Who is president of GDSC for session 2023-24</span>
+            </div>
+            <div class="accordian_body">
+                <p class="accordian_description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+                    porro facere saepe, repellat accusamus ea quia aperiam vitae fuga
+                    similique autem nostrum reiciendis quaerat sequi. Laboriosam aliquid
+                </p>
+            </div>
+        </div>
     </section>
     <section id="contact">
         <div class="contact-box">
             <div class="contact-links">
-                <h2>CONTACT</h2>
-                <div class="links">
-                    <div class="link">
-                        <a href="https://www.linkedin.com/in/iamarghamallick/" target="_blank"><img
-                                src="assets/social-icons/linkedin.svg" alt="linkedin"></a>
-                    </div>
-                    <div class="link">
-                        <a href="https://github.com/iamarghamallick" target="_blank"><img
-                                src="assets/social-icons/github.svg" alt="github"></a>
-                    </div>
-                    <div class="link">
-                        <a href="https://twitter.com/iamarghamallick" target="_blank"><img
-                                src="assets/social-icons/twitter.svg" alt="twitter"></a>
-                    </div>
-                    <div class="link">
-                        <a href="https://www.facebook.com/iam_arghamallick" target="_blank"><img
-                                src="assets/social-icons/facebook.svg" alt="facebook"></a>
-                    </div>
-                    <div class="link">
-                        <a href="https://www.instagram.com/iamarghamallick/" target="_blank"><img
-                                src="assets/social-icons/instagram.svg" alt="instagram"></a>
-                    </div>
-                    <div class="link">
-                        <a href="mailto:contact.arghamallick@gmail.com" target="_blank"><img
-                                src="assets/social-icons/mail.svg" alt="mail"></a>
-                    </div>
-                </div>
+                <h3>Send Us a</h3>
+                <h1>Message! <i class="fa-solid fa-comment-dots"></i></h1>
             </div>
             <div class="contact-form-wrapper">
                 <form action="https://formsubmit.co/48923bedb51b77009e05598129145146" method="POST">
@@ -298,23 +337,62 @@
             </div>
         </div>
     </section>
-    <section class="map-container container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117892.53406498105!2d88.34916364690892!3d22.573803381952132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fe3b109c623%3A0xdfbe090bb9572f78!2sB.%20P.%20Poddar%20Institute%20of%20Management%20and%20Technology!5e0!3m2!1sen!2sin!4v1693142589981!5m2!1sen!2sin"
-            width="768" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <footer>
-        Map | Footer
-    </footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Our Socials</h4>
+                        <div class="signup_form">
+                        </div>
+                    </div>
+                    <div class="social_profile">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="single_footer">
+                        <img class="last" src="assets/gdsc/gdsc-logo.png" alt="gdsc-logo">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>GDSC BPPIMT</h4>
+                        <h2>Google Developer Students Club</h2>
+                        <p>BP Poddar Institute of Management and Technology</p>
+                        <p>137,V.I.P. Road, Poddar Vihar
+                            Kolkata-700052,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Locate Us on G-Map</h4>
+                    </div>
+                    <div class="g-map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117892.53406498105!2d88.34916364690892!3d22.573803381952132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fe3b109c623%3A0xdfbe090bb9572f78!2sB.%20P.%20Poddar%20Institute%20of%20Management%20and%20Technology!5e0!3m2!1sen!2sin!4v1693142589981!5m2!1sen!2sin"
+                            width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="line"></div>
+                    <p class="copyright">Copyright © 2023-24 <a class="text-primary" href="#">GDSC BPPIMT</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+    .about-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 5rem;
+    }
+
+    .domain-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 5rem;
+    }
+
+    .profile-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about-container {
+        padding: 2rem 1rem;
+    }
+
+    div.about-left::before,
+    div.about-left::after {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 200px;
+    }
+
+    div.about-left::before {
+        left: -20px;
+        top: -20px;
+        border-left: 20px solid var(--google-red);
+        border-top: 20px solid var(--google-red);
+    }
+
+    div.about-left::after {
+        right: -20px;
+        bottom: -20px;
+        border-right: 20px solid var(--google-yellow);
+        border-bottom: 20px solid var(--google-yellow);
+    }
+
+    .about-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .domain-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 2rem;
+    }
+
+    .profile-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-box {
+        width: clamp(100px, 90%, 1000px);
+        margin: 80px 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .gallery {
+        padding: 2rem 10px;
+    }
+}
