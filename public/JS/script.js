@@ -86,3 +86,12 @@ function closeAllAccordian(current_target) {
         }
     });
 }
+
+// hide preloader on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.querySelector('.preloader').style.display = "none";
+        document.body.style.height = "unset";
+        document.body.style.overflow = "unset";
+    }, 3000);
+})

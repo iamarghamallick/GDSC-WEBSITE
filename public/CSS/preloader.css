@@ -1,0 +1,21 @@
+.preloader {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 10000;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader img {
+    width: 320px;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
