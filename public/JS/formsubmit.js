@@ -3,9 +3,17 @@ let name = document.getElementById('name');
 let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
+let submitBtn = document.getElementById('submit-btn');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // start loading
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `
+        <div class="spinner-border text-light" role = "status" style = "width: 1rem; height: 1rem; margin: 0 13.71px;">
+            <span class="visually-hidden">Loading...</span>
+        </div>`
 
     let formData = {
         name: name.value,
@@ -20,13 +28,29 @@ contactForm.addEventListener('submit', (e) => {
     xhr.onload = function () {
         console.log(xhr.responseText);
         if (xhr.responseText == 'success') {
-            alert('Message sent');
+            // alert('Success!');
+            // show success message and stop loading
+            submitBtn.style.backgroundColor = "#0F9D58";
+            submitBtn.innerHTML = "Success!"
+            setTimeout(() => {
+                submitBtn.innerHTML = "Send"
+                submitBtn.style.backgroundColor = "#4285F4";
+                submitBtn.disabled = false;
+            }, 5000);
             name.value = "";
             email.value = "";
             subject.value = "";
             message.value = "";
         } else {
-            alert('Something went wrong!');
+            // alert('Something went wrong!');
+            // show error message and stop loading
+            submitBtn.style.backgroundColor = "#DB4437";
+            submitBtn.innerHTML = "Failed!"
+            setTimeout(() => {
+                submitBtn.innerHTML = "Send"
+                submitBtn.style.backgroundColor = "#4285F4";
+                submitBtn.disabled = false;
+            }, 5000);
         }
     }
 

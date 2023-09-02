@@ -623,7 +623,7 @@ textarea:valid+label {
 }
 
 .submit-btn:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.02, 1.02);
 }
 
 .submit-btn:active {
