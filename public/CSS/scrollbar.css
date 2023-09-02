@@ -1,0 +1,22 @@
+/* customizing scrollbar  */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--google-blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--google-yellow);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--google-red);
+}
+
+/* customizing scrollbar ends here */

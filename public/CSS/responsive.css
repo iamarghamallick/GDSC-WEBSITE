@@ -1,0 +1,159 @@
+@media only screen and (max-width: 768px) {
+    .circle1 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .circle2 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .circle3 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .circle4 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 5rem;
+    }
+
+    .domain-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 5rem;
+    }
+
+    .profile-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 2rem;
+    }
+
+    .col {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #bg-img {
+        width: 300px;
+    }
+
+    .content h1 {
+        font-size: 25px;
+    }
+
+    .content h2 {
+        font-size: 15px;
+    }
+
+    .circle1 {
+        height: 100px;
+        width: 100px;
+        right: 10px;
+        bottom: 150px;
+    }
+
+    .circle2 {
+        height: 125px;
+        width: 125px;
+        top: 100px;
+        left: 10px;
+    }
+
+    .circle3 {
+        height: 75px;
+        width: 75px;
+        right: 30px;
+        top: 70px;
+    }
+
+    .circle4 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-container {
+        padding: 2rem 1rem;
+    }
+
+    div.about-left::before,
+    div.about-left::after {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 200px;
+    }
+
+    div.about-left::before {
+        left: -20px;
+        top: -20px;
+        border-left: 20px solid var(--google-red);
+        border-top: 20px solid var(--google-red);
+    }
+
+    div.about-left::after {
+        right: -20px;
+        bottom: -20px;
+        border-right: 20px solid var(--google-yellow);
+        border-bottom: 20px solid var(--google-yellow);
+    }
+
+    .about-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .domain-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 2rem;
+    }
+
+    .profile-cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-box {
+        width: clamp(100px, 90%, 1000px);
+        margin: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contact-links {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        padding: 5rem 3rem;
+    }
+
+    .contact-links h3 {
+        font-size: clamp(20px, 3vw, 30px);
+    }
+
+    .contact-links h1 {
+        font-size: clamp(30px, 5vw, 50px);
+    }
+
+    .contact-form-wrapper {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .gallery {
+        padding: 2rem 10px;
+    }
+}
