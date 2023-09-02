@@ -669,7 +669,6 @@ textarea:valid+label {
 }
 
 .single_footer ul li a {
-
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     line-height: 36px;
@@ -723,20 +722,16 @@ textarea:valid+label {
     height: 50px;
     line-height: 50px;
     display: block;
-
 }
 
 .social_profile ul li a:hover {
     background: #88b2f1;
-
-
     border: 0px;
 }
 
 .copyright {
     margin-top: 70px;
     padding-top: 40px;
-
     font-size: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     text-align: center;
