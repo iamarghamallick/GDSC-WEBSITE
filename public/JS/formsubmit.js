@@ -56,3 +56,21 @@ contactForm.addEventListener('submit', (e) => {
 
     xhr.send(JSON.stringify(formData));
 })
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycby1Ny0Mc6GFFu3R7ImUgZlJArqMHO-c_yuF3JKBnn9dJaQAvGIsK24dC_UR6OaAsFXp/exec'
+const form = document.forms['submit-to-google-sheet']
+
+try {
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                console.log('Success!', response);
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+            })
+    })
+} catch (err) {
+    console.log(err)
+}
