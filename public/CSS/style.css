@@ -6,6 +6,7 @@
     --google-blue: #4285F4;
     --google-yellow: #F4B400;
     --light-blue: #cfcfff;
+    --light-fade: #ffffff83;
     --google-red-fade: #db4537b2;
     --google-blue-fade: #86b4ffda;
     --white-fade: #797979;
@@ -229,6 +230,16 @@ div.about-left::after {
     margin: 0 auto;
 }
 
+.domain-card h4 {
+    background-color: var(--light-fade);
+    color: black;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .domain-card:nth-child(1) {
     background-color: var(--google-blue);
 }
@@ -264,12 +275,11 @@ div.about-left::after {
     align-items: center;
     padding: 2rem 1rem;
     border-radius: 50px;
-    cursor: pointer;
     transition: all .2s ease-in-out;
 }
 
 .domain-card:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 /* domain profiles  */
@@ -341,21 +351,12 @@ div.about-left::after {
 }
 
 .swiper-slide {
-    aspect-ratio: 16 / 9;
     text-align: center;
     font-size: 18px;
-    background: white;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-}
-
-.swiper-slide img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .swiper-slide img {
@@ -363,6 +364,11 @@ div.about-left::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* faq section  */
