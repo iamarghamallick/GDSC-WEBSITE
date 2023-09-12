@@ -48,6 +48,18 @@ nav {
     box-shadow: 2px 2px 2px rgb(210, 206, 206);
 }
 
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: var(--google-blue-fade);
+}
+
 /* home  */
 .body {
     display: flex;
