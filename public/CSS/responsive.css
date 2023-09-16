@@ -73,10 +73,10 @@
     }
 
     .circle1 {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
         right: 10px;
-        bottom: 150px;
+        bottom: 0;
     }
 
     .circle2 {
@@ -87,10 +87,10 @@
     }
 
     .circle3 {
-        height: 75px;
-        width: 75px;
-        right: 30px;
-        top: 70px;
+        height: 150px;
+        width: 150px;
+        right: 0;
+        top: 60px;
     }
 
     .circle4 {
@@ -142,6 +142,8 @@
 
     .sponsors {
         grid-template-columns: repeat(1, 1fr);
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .contact-box {

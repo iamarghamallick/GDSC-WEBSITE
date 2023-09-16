@@ -44,30 +44,9 @@ function changeImage() {
     }
 }
 
-function printStringByLetter(paragraph_id, myDiv_id) {
-    var myDiv = document.getElementById(myDiv_id);
-    var text = document.getElementById(paragraph_id).innerHTML;
-    // myDiv.innerHTML = "";
-    document.getElementById(myDiv_id).innerHTML = "";
-    // console.log(text.length);
-    var index = 0;
-    var intervalId = setInterval(function () {
-        myDiv.innerHTML += text.charAt(index);
-        index++;
-        // console.log(index);
-        if (index == text.length) {
-            clearInterval(intervalId);
-            index = 0;
-            text = "";
-        }
-    }, 50);
-}
-
 function clearBox(elementID) {
     document.getElementById(elementID).innerHTML = "";
 }
-
-
 
 let accordianHead = Array.from(document.querySelectorAll(".accordian_head"));
 
@@ -96,6 +75,9 @@ function closeAllAccordian(current_target) {
 
 // hide preloader on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.body.style.animation = "fade-out ease-out 0.5s";
+    }, 2500);
     setTimeout(() => {
         document.querySelector('.preloader').style.display = "none";
         document.body.style.height = "unset";
