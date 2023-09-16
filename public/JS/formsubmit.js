@@ -63,7 +63,17 @@ const form = document.forms['submit-to-google-sheet']
 try {
     form.addEventListener('submit', e => {
         e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+
+        // Get the current time
+        const currentTime = new Date().toLocaleString();
+
+        // Create a new FormData object
+        const formData = new FormData(form);
+
+        // Add the current time to the FormData object
+        formData.append('time', currentTime);
+
+        fetch(scriptURL, { method: 'POST', body: formData })
             .then(response => {
                 console.log('Success!', response);
             })

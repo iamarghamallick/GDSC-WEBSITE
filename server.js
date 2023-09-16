@@ -22,13 +22,13 @@ app.route("/sendemail").post((req, res) => {
         const userOptions = {
             from: process.env.EMAIL,
             to: email,
-            subject: "We will get back to you soon!",
+            subject: "Google DSC BPPIMT : We will get back to you soon!",
             text: `Thank you for your response\n\nHere's what we received\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}\n\nStay connected :)`,
         };
         const adminOptions = {
             from: process.env.EMAIL,
             to: process.env.EMAIL,
-            subject: `${subject} : ${email}`,
+            subject: `Google DSC BPPIMT : New Message`,
             text: `Response from ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
         };
         sendEmail(userOptions);
