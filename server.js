@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const sendEmail = require("./email_service");
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -7,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 // Middlewares
 app.use(express.static('public'));
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.route("/").get((req, res) => {

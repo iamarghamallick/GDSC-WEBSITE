@@ -5,6 +5,8 @@ let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 let submitBtn = document.getElementById('submit-btn');
 
+const hostURL = "http://localhost:3000";
+
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -23,7 +25,7 @@ contactForm.addEventListener('submit', (e) => {
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/sendemail');
+    xhr.open('POST', `${hostURL}/sendemail`);
     xhr.setRequestHeader('content-type', 'application/json');
     xhr.onload = function () {
         console.log(xhr.responseText);
@@ -57,7 +59,7 @@ contactForm.addEventListener('submit', (e) => {
     xhr.send(JSON.stringify(formData));
 })
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycby1Ny0Mc6GFFu3R7ImUgZlJArqMHO-c_yuF3JKBnn9dJaQAvGIsK24dC_UR6OaAsFXp/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyjL4LAGK6b0DubgLiXY7Rm3zUAlNYZf3PdBmLG6tp4YqMB40zSKP_g4J2aShnR7dB5/exec'
 const form = document.forms['submit-to-google-sheet']
 
 try {
