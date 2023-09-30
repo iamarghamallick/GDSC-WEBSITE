@@ -5,7 +5,7 @@ let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 let submitBtn = document.getElementById('submit-btn');
 
-const hostURL = "http://localhost:3000";
+const hostURL = "https://gdsc-bppimt.onrender.com";
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
