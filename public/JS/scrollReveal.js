@@ -2,7 +2,7 @@ ScrollReveal(
     {
         distance: '60px',
         delay: '300',
-        origin: 'left'
+        origin: 'bottom'
     }
 ).reveal('.about-left');
 
@@ -10,7 +10,7 @@ ScrollReveal(
     {
         distance: '60px',
         delay: '300',
-        origin: 'right'
+        origin: 'bottom'
     }
 ).reveal('.about-right');
 
@@ -50,7 +50,7 @@ ScrollReveal(
     {
         distance: '60px',
         delay: '300',
-        origin: 'left'
+        origin: 'bottom'
     }
 ).reveal('.contact-links');
 
@@ -58,6 +58,6 @@ ScrollReveal(
     {
         distance: '60px',
         delay: '300',
-        origin: 'right'
+        origin: 'bottom'
     }
 ).reveal('.contact-form-wrapper');
