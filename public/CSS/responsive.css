@@ -29,6 +29,10 @@
         width: 150px;
     }
 
+    .content h1 {
+        font-size: 50px;
+    }
+
     .about-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 2rem 5rem;
@@ -65,7 +69,7 @@
     }
 
     .content h1 {
-        font-size: 25px;
+        font-size: 33px;
     }
 
     .content h2 {

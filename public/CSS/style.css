@@ -71,8 +71,15 @@ nav {
 }
 
 .content h1 {
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 700;
+    background-image: url(../assets/gdsc/texture.gif);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px 0;
 }
 
 .content {
