@@ -20,6 +20,22 @@ ScrollReveal(
         delay: '300',
         origin: 'bottom'
     }
+).reveal('.lead-left');
+
+ScrollReveal(
+    {
+        distance: '60px',
+        delay: '300',
+        origin: 'bottom'
+    }
+).reveal('.lead-right');
+
+ScrollReveal(
+    {
+        distance: '60px',
+        delay: '300',
+        origin: 'bottom'
+    }
 ).reveal('.domain-card');
 
 ScrollReveal(

@@ -43,6 +43,16 @@
     font-weight: bold;
 }
 
+.h-bar {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    width: 90%;
+    box-shadow: gray 1px 0 10px 1px;
+    background-color: gray;
+}
+
 /* navigation  */
 nav {
     box-shadow: 2px 2px 2px rgb(210, 206, 206);
@@ -242,6 +252,62 @@ div.about-left::after {
     font-weight: 900;
 }
 
+/* lead section  */
+.lead-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+.lead-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+.lead-left p {
+    color: #c5c5c5;
+    font-weight: 700;
+}
+
+div.lead-right {
+    background: lightgray;
+    position: relative;
+    border: none;
+    margin: 25px;
+    text-align: center;
+}
+
+div.lead-right::before,
+div.lead-right::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+}
+
+div.lead-right::before {
+    right: -50px;
+    top: -50px;
+    border-right: 50px solid var(--google-green);
+    border-top: 50px solid var(--google-green);
+}
+
+div.lead-right::after {
+    left: -50px;
+    bottom: -50px;
+    border-left: 50px solid var(--google-blue);
+    border-bottom: 50px solid var(--google-blue);
+}
+
+.lead-right img {
+    width: 100%;
+    box-shadow: -20px -20px 20px 0px rgba(128, 128, 128, 0.466);
+}
+
 /* domain section */
 .domain {
     color: white;
@@ -328,19 +394,22 @@ div.about-left::after {
     border: 2px solid var(--google-yellow);
 }
 
+.profile-card:nth-child(4) {
+    border: 2px solid var(--google-blue);
+}
+
 .profile-card {
     background: #191c29;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .profile-card img {
-    border: 5px solid var(--google-blue);
-    border-radius: 50%;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
 }
 
 .profile-card h6 {
@@ -352,6 +421,9 @@ div.about-left::after {
     justify-content: center;
     gap: 1rem;
     width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(360deg, transparent, #5c6283);
+    border-radius: 0 0 30px 30px;
 }
 
 .social-link i {
