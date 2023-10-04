@@ -1,3 +1,4 @@
+// img gallery loop
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -12,6 +13,23 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+// lazy-loading feature
+const blurDivs = document.querySelectorAll(".blur-load");
+blurDivs.forEach(div => {
+    const img = div.querySelector("img");
+    function loaded() {
+        // show image
+        div.classList.add("loaded");
+    }
+
+    if (img.complete) {
+        loaded();
+    } else {
+        img.addEventListener("load", loaded);
+    }
+})
+
+// faq section
 var acc = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
