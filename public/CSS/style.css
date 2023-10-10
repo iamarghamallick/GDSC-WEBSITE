@@ -459,7 +459,7 @@ div.lead-right::after {
 .member-socials {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
     padding: 10px 0;
     background: linear-gradient(360deg, transparent, #5c6283);
